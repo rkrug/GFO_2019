@@ -29,10 +29,10 @@ It is planned to bundle this into a shiny application, so that users do need no 
 
 ## Presentation
 
-[Metadata can be easy!](./MetadataCanBeEasy_RMKrug.html)
+<a href="./MetadataCanBeEasy_RMKrug.html" target="_blank">Metadata can be easy!</a>
 
-[Live Demo Develop New Scheme](./LiveDemo_NewScheme.R)
+[Download R Code for Live Demo Develop New Scheme](./LiveDemo_NewScheme.R)
 
-[Live Demo Howto USe a Scheme](./LiveDemo_UseScheme.R)
+[Download R Code for Live Demo Howto Use a Scheme](./LiveDemo_UseScheme.R)
 
-[Github Repo](https://github.com/rkrug/GFO_2019)
+<a href="https://github.com/rkrug/GFO_2019" target="_blank">Github Repo</a>
