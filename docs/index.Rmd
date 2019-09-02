@@ -33,5 +33,5 @@ It is planned to bundle this into a shiny application, so that users do need no 
 
 [Live Demo Develop New Scheme](./LiveDemo_NewScheme.R)
 
-[Live Demo Hoto USe a Scheme](./LiveDemo_UseScheme.R)
+[Live Demo Howto USe a Scheme](./LiveDemo_UseScheme.R)
 
