@@ -1,0 +1,267 @@
+---
+title: "MetaData can be easy"
+subtitle: ""
+author: "Rainer Krug"
+institute: "Department of Evolutionary Biology and Environmental Studies, UZH"
+date: "2019/09/11 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: bottom, left
+
+background-image: url(./fig/5141328136_16d8f73ee7_b_BW.jpg)
+background-size: cover
+Image credit: [randylane](http://randylane.com/wp-content/uploads/2014/09/5141328136_16d8f73ee7_b.jpg) 
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(knitr)
+```
+
+```{css, echo=FALSE}
+/* custom.css */
+
+.title-slide.remark-slide-content:before{
+  position: absolute;
+  bottom: 95%;
+  left: 1%;
+  # content:url(./fig/qr_talk.svg);
+  height:5%;
+}
+
+.alert {
+  color: #FF0000;
+  text-align: center;
+  font-size: xx-large;
+  float: middle;
+}
+
+.dt {
+  font-size: x-small;
+  float: left;
+  bottom: 0;
+}]
+
+```
+
+---
+class: bottom, left
+
+background-image: url(./fig/FAIR_EN.png)
+background-size: contain
+Image credit: [ogsl](https://ogsl.ca/sites/default/files/FAIR_EN.png)
+
+see [Force11](https://www.force11.org/group/fairgroup/fairprinciples) for more info
+---
+class: bottom, left
+
+background-image: url(./fig/5141328136_16d8f73ee7_b_BW.jpg)
+background-size: cover
+Image credit: [randylane](http://randylane.com/wp-content/uploads/2014/09/5141328136_16d8f73ee7_b.jpg) 
+
+---
+class: bottom, left
+
+background-image: url(./fig/5141328136_16d8f73ee7_b.jpg)
+background-size: cover
+Image credit: [randylane](http://randylane.com/wp-content/uploads/2014/09/5141328136_16d8f73ee7_b.jpg) 
+
+---
+class: bottom, left
+
+background-image: url(./fig/Person-tree.jpg)
+background-size: contain
+Image credit: [Pooktree](https://en.wikipedia.org/wiki/Tree#/media/File:Person-tree.jpg) 
+
+---
+class: bottom, left
+
+background-image: url(./fig/birch.jpg)
+background-size: contain
+Image credit: [Artplants](https://www.amazon.co.uk/Birch-Foliage-Spray-leaves-green/dp/B00FMQR884) 
+
+---
+class: bottom, left
+
+background-image: url(./fig/DomainSpecificMetadata.png)
+background-size: contain
+[Poisot et al. (2019)](https://doi.org/10.1016/j.tree.2019.04.005) 
+
+---
+class: top
+background-image: url(./fig/birch.jpg)
+background-size: 60%
+background-position: right
+
+## Two aspects
+--
+
+1. **Developing**  
+a new Domain Specific MetaData Scheme
+--
+
+
+2. **Using**  
+the new Domain Specific MetaData Scheme
+---
+
+## Tool which will help
+
+--
+
+#### developing a new Domain Specific MetaData Scheme
+  
+  - together with scientists
+  
+  - encourage buy in & "ownership" of scheme
+  
+--
+
+#### entering MetaData
+
+  - easy, fun & transparent
+
+--
+
+#### validate MetaData
+
+  - report of errors and inconsistencies
+
+--
+
+#### exporting MetaData
+  
+  - formats suitable for repository submission & indexing
+
+---
+class: top
+background-image: url(./fig/Rlogo.png)
+background-size: 20%
+background-position: top right
+
+## Use programming language R
+
+--
+
+## Two packages
+
+--
+
+1. **scheme generator - developer - `dmdScheme`**
+
+  - template scheme, 
+  - base functionality for 
+      - entering, 
+      - validating and 
+      - exporting the metadata and 
+  - tools to develop new schemes and packages
+  
+--
+
+2. **actual scheme - user - e.g. `emeScheme`**
+
+  - a specific scheme and can contain
+  - additional functionality  for 
+      - entering, 
+      - validating and 
+      - exporting the metadata and
+  - additional specific tools
+
+---
+class: center, top
+
+background-image: url(./fig/Experiment.png)
+background-size: 104%
+background-position: middle center
+
+---
+class: center, top
+
+background-image: url(./fig/Species.png)
+background-size: 106%
+background-position: middle center
+
+---
+class: center, top
+
+background-image: url(./fig/DataFileMetaData.png)
+background-size: 105% 
+background-position: middle center
+
+---
+class: center, top
+
+background-image: url(./fig/ValidationReport.png)
+background-size: 107% 
+background-position: middle center
+
+---
+class: inverse, center, middle
+
+# How to develop <br/> a new Domain Specific MetaData Scheme
+(scheme) developer perspective  
+(basic) R knowledge necessary  
+
+---
+class: center, top
+
+background-image: url(./fig/workflow_newScheme.png)
+background-size: contain
+background-position: top center
+
+---
+class: inverse, center, middle
+
+## Live Demo
+How to Develop a New Domain Specific MetaData Scheme
+
+---
+class: inverse, center, middle
+
+# How to use <br/> the new Domain Specific MetaData Scheme
+from a user / researcher perspective  
+no R knowledge necessary  
+basic GUI (shiny app) is available  
+also possible from R
+
+---
+class: center, top
+
+background-image: url(./fig/ShinyApp.png)
+background-size: contain
+background-position: top center
+
+---
+class: center, top
+
+background-image: url(./fig/workflow_enterMetaData.png)
+background-size: contain
+background-position: top center
+
+---
+class: inverse, center, middle
+
+# Live Demo
+How to Enter New MetaData
+
+---
+class: left, top
+
+background-image: url(./fig/qr_talk.svg),url(./fig/qr_dmdScheme.svg)
+background-size: 25%
+background-position: 60% 10%, 60% 76%
+
+# <br>Talk <br><br><br><br>
+
+# `dmdScheme`
+
+---
+
+
+
+

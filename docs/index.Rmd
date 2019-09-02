@@ -1,12 +1,8 @@
-MetaData can be easy!
-================
-
-**<p align="center">[Rainer M. Krug<sup>1</sup>](mailto:Rainer.Krug@uzh.ch)</p>**
-
-<p align="center">&</p>
-
-**<p align="center">[Owen L. Petchey<sup>1</sup>](mailto:Owen.Petchey@uzh.ch)</p>**
-
+---
+title: "MetaData can be easy!"
+author: "[Rainer M. Krug<sup>1</sup>](mailto:Rainer.Krug@uzh.ch) & [Owen L. Petchey<sup>1</sup>](mailto:Owen.Petchey@uzh.ch)"
+output: html_document
+---
 
 <p align="center"><sup>1</sup> Department of Evolutionary Biology and Environmental Studies, University of Zürich, Zürich, Switzerland</p>
 
@@ -22,7 +18,7 @@ Consequently, metadata remains the poor stepchild of data sets.
 
 I will present an approach which tries to overcome this weakness by
 
-1. defining a domain specific metadata scheme whcih is being driven by scientists in a specific domain and their needs to find other data sets which can be used in their research
+1. defining a domain specific metadata scheme which is being driven by scientists in a specific domain and their needs to find other data sets which can be used in their research
 2. use an R package to define the metadata scheme
 3. use a spreadsheet to enter the metadata per experiment and not per dataset
 4. validate the metadata and creating a user friendly report
@@ -30,3 +26,7 @@ I will present an approach which tries to overcome this weakness by
 6. bundling functionality as well as scheme definition into one convenient R package.
 
 It is planned to bundle this into a shiny application, so that users do need no knowledge of R to use these metadata schemes.
+
+## Presentation
+
+[Metadata can be easy!](./MetadataCanBeEasy_RMKrug.html)
