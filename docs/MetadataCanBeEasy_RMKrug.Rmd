@@ -16,7 +16,7 @@ class: bottom, left
 
 background-image: url(./fig/5141328136_16d8f73ee7_b_BW.jpg)
 background-size: cover
-Image credit: [randylane](http://randylane.com/wp-content/uploads/2014/09/5141328136_16d8f73ee7_b.jpg) 
+.dt[ Image credit: [randylane](http://randylane.com/wp-content/uploads/2014/09/5141328136_16d8f73ee7_b.jpg) ]
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
@@ -41,10 +41,19 @@ library(knitr)
   float: middle;
 }
 
+.red {
+  color: #FF0000;
+}
+
+.blue {
+  color: #0000FF;
+}
+
 .dt {
   font-size: x-small;
-  float: left;
-  bottom: 0;
+  position: absolute;
+  bottom: 10px;
+  width: 50%;
 }]
 
 ```
@@ -54,7 +63,7 @@ class: bottom, left
 
 background-image: url(./fig/FAIR_EN.png)
 background-size: contain
-Image credit: [ogsl](https://ogsl.ca/sites/default/files/FAIR_EN.png)
+.dt[ Image credit: [ogsl](https://ogsl.ca/sites/default/files/FAIR_EN.png) ]
 
 see [Force11](https://www.force11.org/group/fairgroup/fairprinciples) for more info
 
@@ -100,37 +109,65 @@ R1.3. (meta)data meet domain-relevant community standards.
 
  
 ---
+class: center, top
+
+#  Why do we need this?
+
+--
+.left[
+- Whose MSc / PhD / first research project was more than 3 years ago? 
+]
+
+--
+
+.left[
+- Who remembers 
+
+  - where the data is and if it is still readable?
+  - what the column names mean?
+  - which units were used?
+  - how the analysis was done (script)?
+]
+
+--
+
+# How can you re-use your data?
+
+--
+
+# How can anybody else re-use your data?
+---
 class: bottom, left
 
 background-image: url(./fig/5141328136_16d8f73ee7_b_BW.jpg)
 background-size: cover
-Image credit: [randylane](http://randylane.com/wp-content/uploads/2014/09/5141328136_16d8f73ee7_b.jpg) 
+.dt[ Image credit: [randylane](http://randylane.com/wp-content/uploads/2014/09/5141328136_16d8f73ee7_b.jpg) ]
 
 ---
 class: bottom, left
 
 background-image: url(./fig/5141328136_16d8f73ee7_b.jpg)
 background-size: cover
-Image credit: [randylane](http://randylane.com/wp-content/uploads/2014/09/5141328136_16d8f73ee7_b.jpg) 
+.dt[ Image credit: [randylane](http://randylane.com/wp-content/uploads/2014/09/5141328136_16d8f73ee7_b.jpg) ]
 
 ---
 class: bottom, left
 
 background-image: url(./fig/Person-tree.jpg)
 background-size: contain
-Image credit: [Pooktree](https://en.wikipedia.org/wiki/Tree#/media/File:Person-tree.jpg) 
+.dt[ Image credit: [Pooktree](https://en.wikipedia.org/wiki/Tree#/media/File:Person-tree.jpg) ]
 
 ---
 class: bottom, left
 
 background-image: url(./fig/birch.jpg)
 background-size: contain
-Image credit: [Artplants](https://www.amazon.co.uk/Birch-Foliage-Spray-leaves-green/dp/B00FMQR884) 
+.dt[ Image credit: [Artplants](https://www.amazon.co.uk/Birch-Foliage-Spray-leaves-green/dp/B00FMQR884) ]
 
 ---
 class: bottom, left
 
-background-image: url(./fig/DomainSpecificMetadata.png)
+background-image: url(./fig/Poisot2019.png)
 background-size: contain
 [Poisot et al. (2019)](https://doi.org/10.1016/j.tree.2019.04.005) 
 
@@ -139,6 +176,8 @@ class: top
 background-image: url(./fig/birch.jpg)
 background-size: 60%
 background-position: right
+
+.dt[ Image credit: [Pooktree](https://en.wikipedia.org/wiki/Tree#/media/File:Person-tree.jpg) ]
 
 ## Two aspects
 --
@@ -152,11 +191,11 @@ a new Domain Specific MetaData Scheme
 the new Domain Specific MetaData Scheme
 ---
 
-## Tool which will help
+## Tool which will help to
 
 --
 
-#### developing a new Domain Specific MetaData Scheme
+#### develop a new Domain Specific MetaData Scheme [.blue[ developer & researcher]: .red[R & Spreadsheet]]
   
   - together with scientists
   
@@ -169,7 +208,7 @@ the new Domain Specific MetaData Scheme
 
 --
 
-#### entering MetaData
+#### enter MetaData [.blue[ user]: .red[browser & Spreadsheet]]
 
   - easy, fun & transparent
 
@@ -178,7 +217,7 @@ the new Domain Specific MetaData Scheme
 - Spreadsheet to enter data
 --
 
-#### validate MetaData
+#### validate MetaData [.blue[ user]: .red[browser]]
 
   - report of errors and inconsistencies
 
@@ -187,7 +226,7 @@ the new Domain Specific MetaData Scheme
 - Validation report as html or pdf
 --
 
-#### exporting MetaData
+#### export MetaData [.blue[ user]: .red[browser]]
   
   - formats suitable for repository submission & indexing
 
@@ -306,32 +345,13 @@ class: inverse, center, middle
 How to Enter New MetaData
 
 ---
-class: inverse, center, middle
-
-# Thank you.
-
----
 class: left, top
 
-background-image: url(./fig/qr_talk.svg),url(./fig/qr_dmdScheme.svg)
-background-size: 25%
-background-position: 60% 10%, 60% 76%
+background-image: url(./fig/qr_talk.svg),url(./fig/qr_dmdScheme.svg),url(./fig/big_coffee.jpg)
+background-size: 15%, 15%, 100%
+background-position: 21% 3%, 92% 3%, 100% 100%
 
-# <br>Talk <br><br><br><br>
+# <span style="padding-top:250px"> Talk <span style="padding-left:250px"> `dmdScheme`
 
-# `dmdScheme`
-
----
-class: bottom, left
-
-background-image: url(./fig/big_coffee.jpg)
-background-size: contain
-background-position: top center
-
-Image credit: [eater.com](https://www.eater.com/2014/10/30/7131255/starbucks-free-drink-record-83-101-shots-espresso)
-
-
----
-
-
+.dt[ Image credit: [eater.com](https://www.eater.com/2014/10/30/7131255/starbucks-free-drink-record-83-101-shots-espresso) ]
 
