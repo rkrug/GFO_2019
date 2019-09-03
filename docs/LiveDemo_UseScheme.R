@@ -22,12 +22,9 @@ library(emeScheme)
 
 make_example("basic", schemeName = "emeScheme")
 
-setwd("basic")
-
-
 # View Scheme Definition --------------------------------------------------
 
-read.csv("./data/archiving_data/smell.csv")
+read.csv("./basic/data/archiving_data/smell.csv")
 
 # GUI Approach ------------------------------------------------------------
 
@@ -60,14 +57,14 @@ open_new_spreadsheet("emeScheme")
 # Validate Metadata -------------------------------------------------------
 
 
-validate("emeScheme.xlsx")
+validate("./basic/emeScheme.xlsx")
 
-report("emeScheme.xlsx")
+report("./basic/emeScheme.xlsx")
 
 
 # Export to xml -----------------------------------------------------------
 
 
-emeScheme_to_xml("emeScheme.xlsx", file = "test")
+emeScheme_to_xml("./basic/emeScheme.xlsx", file = "./basic/test")
 
 
