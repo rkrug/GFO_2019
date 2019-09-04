@@ -30,9 +30,9 @@ library(knitr)
 
 .title-slide {
 #  background-color: coral;
-  background-image: url("fig/uzh_logo_e_pos_web_main.jpg"), url("fig/qr_talk.svg");
-  background-size: 30%, 10%;
-  background-position: 1% 01%, 50% 99%;
+  background-image: url("fig/uzh_logo_e_pos.svg"), url("fig/qr_talk.svg");
+  background-size: 20%, 10%;
+  background-position: 1% 1%, 99% 1%;
 }
 
 .alert {
@@ -277,8 +277,8 @@ Let's look at the actual spreaadsheet
 ---
 class: center, top
 
-background-image: url(./fig/Experiment.png)
-background-size: 104%
+background-image: url(./fig/Spreadsheet_Experiment.png)
+background-size: 107%
 background-position: middle center
 
 ???
@@ -288,8 +288,8 @@ background-position: middle center
 ---
 class: center, top
 
-background-image: url(./fig/Species.png)
-background-size: 106%
+background-image: url(./fig/Spreadsheet_Species.png)
+background-size: 107%
 background-position: middle center
 
 ???
@@ -299,8 +299,8 @@ background-position: middle center
 ---
 class: center, top
 
-background-image: url(./fig/DataFileMetaData.png)
-background-size: 105% 
+background-image: url(./fig/Spreadsheet_DataFileMetaData.png)
+background-size: 107% 
 background-position: middle center
 
 ???
@@ -310,7 +310,7 @@ background-position: middle center
 class: center, top
 
 background-image: url(./fig/ValidationReport.png)
-background-size: 107% 
+background-size: 105% 
 background-position: middle center
 
 ---
@@ -346,8 +346,8 @@ also possible from R
 class: center, top
 
 background-image: url(./fig/ShinyApp.png)
-background-size: contain
-background-position: top center
+background-size: 43%
+background-position: 50% 25%
 
 ---
 class: center, top
