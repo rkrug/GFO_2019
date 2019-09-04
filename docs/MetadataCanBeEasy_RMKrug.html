@@ -4,8 +4,9 @@
     <title>MetaData can be easy</title>
     <meta charset="utf-8" />
     <meta name="author" content="Rainer Krug &amp; Owen L. Petchey" />
-    <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css/middlebury.css" rel="stylesheet" />
+    <link href="libs/remark-css/middlebury.css" rel="stylesheet" />
+    <link rel="stylesheet" href="middlebury-fonts.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -30,6 +31,7 @@ background-size: cover
 /* custom.css */
 
 .title-slide {
+#  background-color: coral;
   background-image: url("fig/uzh_logo_e_pos_web_main.jpg"), url("fig/qr_talk.svg");
   background-size: 30%, 10%;
   background-position: 1% 01%, 50% 99%;
@@ -376,13 +378,13 @@ A .red[BIG THANK YOU] to everybody in the our group
 Particularly the Guinea Pigs
 
 ---
-class: left, bottom
+class: center, bottom
 
 background-image: url(./fig/qr_talk.svg),url(./fig/qr_dmdScheme.svg),url(./fig/big_coffee.jpg)
-background-size: 15%, 15%, 100%
-background-position: 21% 97%, 92% 97%, 100% 0%
+background-size: 10%, 10%, 80%
+background-position: 25% 98%, 89% 98%, 50% 0%
 
-# &lt;span style="padding-top:250px"&gt; Talk &lt;span style="padding-left:250px"&gt; `dmdScheme`
+#  Talk &lt;span style="padding-left:350px"&gt; `dmdScheme` &lt;span style="padding-left:210px"&gt;
 
 .dt[ Image credit: [eater.com](https://www.eater.com/2014/10/30/7131255/starbucks-free-drink-record-83-101-shots-espresso) ]
     </textarea>
@@ -391,7 +393,8 @@ background-position: 21% 97%, 92% 97%, 100% 0%
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
-"countIncrementalSlides": false
+"countIncrementalSlides": false,
+"ratio": "16:9"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
