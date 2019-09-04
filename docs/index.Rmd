@@ -6,6 +6,8 @@ output: html_document
 
 <p align="center"><sup>1</sup> Department of Evolutionary Biology and Environmental Studies, University of Zürich, Zürich, Switzerland</p>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3386062.svg)](https://doi.org/10.5281/zenodo.3386062)
+
 ## Abstract
 
 The data generated in and for research increases dramatically not only in size but also in the number of data sets. For (later) re-use of data (by the creator of the data as well as by others), the metadata associated with data sets is as important as the data itself. But when ‘normal' researchers are asked to provide metadata, the enthusiasm is severely dampened due to the complexities of most metadata schemes.

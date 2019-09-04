@@ -1,7 +1,7 @@
 ---
 title: "MetaData can be easy"
 subtitle: ""
-author: "Rainer Krug & Owen L. Petchey"
+author: "Rainer M. Krug & Owen L. Petchey"
 institute: "Department of Evolutionary Biology and Environmental Studies, UZH"
 date: "2019/09/11 (updated: `r Sys.Date()`)"
 output:
@@ -30,9 +30,9 @@ library(knitr)
 
 .title-slide {
 #  background-color: coral;
-  background-image: url("fig/uzh_logo_e_pos.svg"), url("fig/qr_talk.svg");
-  background-size: 20%, 10%;
-  background-position: 1% 1%, 99% 1%;
+  background-image: url("fig/uzh_logo_e_pos.svg"), url("fig/qr_talk.svg"), url("https://zenodo.org/badge/DOI/10.5281/zenodo.3386062.svg");
+  background-size: 20%, 10%, 20%;
+  background-position: 1% 1%, 99% 1%, 1% 99%;
 }
 
 .alert {
@@ -378,9 +378,9 @@ Particularly the Guinea Pigs
 ---
 class: center, bottom
 
-background-image: url(./fig/qr_talk.svg),url(./fig/qr_dmdScheme.svg),url(./fig/big_coffee.jpg)
-background-size: 10%, 10%, 80%
-background-position: 25% 98%, 89% 98%, 50% 0%
+background-image: url(./fig/qr_talk.svg),url(./fig/qr_dmdScheme.svg),url(./fig/big_coffee.jpg),url("https://zenodo.org/badge/DOI/10.5281/zenodo.3386062.svg"),url("https://zenodo.org/badge/DOI/10.5281/zenodo.3229615.svg")
+background-size: 10%, 10%, 80%, 20%, 20%
+background-position: 25% 98%, 89% 98%, 50% 0%, 1% 95%, 65% 95%
 
 #  Talk <span style="padding-left:350px"> `dmdScheme` <span style="padding-left:210px">
 
