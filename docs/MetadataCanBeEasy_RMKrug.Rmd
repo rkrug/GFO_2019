@@ -1,17 +1,19 @@
 ---
 title: "MetaData can be easy"
 subtitle: ""
-author: "Rainer Krug"
+author: "Rainer M. Krug & Owen L. Petchey"
 institute: "Department of Evolutionary Biology and Environmental Studies, UZH"
 date: "2019/09/11 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
     chakra: libs/remark-latest.min.js
+    css: ["middlebury", "middlebury", "middlebury-fonts.css"]
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      ratio: '16:9'
 ---
 class: bottom, left
 
@@ -27,12 +29,11 @@ library(knitr)
 ```{css, echo=FALSE}
 /* custom.css */
 
-.title-slide.remark-slide-content:before{
-  position: absolute;
-  bottom: 95%;
-  left: 1%;
-  # content:url(./fig/qr_talk.svg);
-  height:5%;
+.title-slide {
+#  background-color: coral;
+  background-image: url("fig/uzh_logo_e_pos.svg"), url("fig/qr_talk.svg"), url("https://zenodo.org/badge/DOI/10.5281/zenodo.3386062.svg");
+  background-size: 20%, 10%, 20%;
+  background-position: 1% 1%, 99% 1%, 1% 99%;
 }
 
 .alert {
@@ -132,11 +133,11 @@ class: center, top
 
 --
 
-# How can you re-use your data?
+# .red[How can you re-use your data?]
 
 --
 
-# How can anybody else re-use your data?
+# .red[How can anybody else re-use your data?]
 ---
 class: bottom, left
 
@@ -176,27 +177,30 @@ background-size: contain
 class: top
 background-image: url(./fig/birch.jpg)
 background-size: 60%
-background-position: right
+background-position: 112% 50%
 
 .dt[ Image credit: [Pooktree](https://en.wikipedia.org/wiki/Tree#/media/File:Person-tree.jpg) ]
 
 ## Two aspects
 --
 
-1. **Developing**  
+1. .red[**Developing**]  
 a new Domain Specific MetaData Scheme
 --
 
 
-2. **Using**  
+2. .red[**Using**]  
 the new Domain Specific MetaData Scheme
 ---
 
-## Tool which will help to
+## Tool(s) which will help to
 
+???
+
+What do we know: Spreadsheets, Web Browser & R
 --
 
-#### develop a new Domain Specific MetaData Scheme [.blue[ developer & researcher]: .red[R & Spreadsheet]]
+#### develop a new Domain Specific MetaData Scheme [.blue[ developer & scientists]: .red[R & Spreadsheet]]
   
   - together with scientists
   
@@ -268,32 +272,46 @@ background-position: top right
       - exporting the metadata and
   - additional specific tools
 
+???
+
+Let's look at the actual spreaadsheet
 ---
 class: center, top
 
-background-image: url(./fig/Experiment.png)
-background-size: 104%
+background-image: url(./fig/Spreadsheet_Experiment.png)
+background-size: 107%
 background-position: middle center
+
+???
+
+- Experiment based
+- this one is needed
+---
+class: center, top
+
+background-image: url(./fig/Spreadsheet_Species.png)
+background-size: 107%
+background-position: middle center
+
+???
+- sheet can be modified
+- sheets can be removed or added
 
 ---
 class: center, top
 
-background-image: url(./fig/Species.png)
-background-size: 106%
+background-image: url(./fig/Spreadsheet_DataFileMetaData.png)
+background-size: 107% 
 background-position: middle center
 
----
-class: center, top
-
-background-image: url(./fig/DataFileMetaData.png)
-background-size: 105% 
-background-position: middle center
-
+???
+- link to data files
+- sheet is needed
 ---
 class: center, top
 
 background-image: url(./fig/ValidationReport.png)
-background-size: 107% 
+background-size: 105% 
 background-position: middle center
 
 ---
@@ -329,8 +347,8 @@ also possible from R
 class: center, top
 
 background-image: url(./fig/ShinyApp.png)
-background-size: contain
-background-position: top center
+background-size: 43%
+background-position: 50% 25%
 
 ---
 class: center, top
@@ -346,13 +364,47 @@ class: inverse, center, middle
 How to Enter New MetaData
 
 ---
-class: left, bottom
+class: center, top
+background-image: url(./fig/qr_email.svg)
+background-size: 10%
+background-position: 80% 100%
 
-background-image: url(./fig/qr_talk.svg),url(./fig/qr_dmdScheme.svg),url(./fig/big_coffee.jpg)
-background-size: 15%, 15%, 100%
-background-position: 21% 97%, 92% 97%, 100% 0%
 
-# <span style="padding-top:250px"> Talk <span style="padding-left:250px"> `dmdScheme`
+# Where to go from Here?
+--
+
+### Spread the Word and Develop `dmdSchemes`
+--
+
+### Search Engine for all `dmdScheme`
+### Web Based Repository of `dmdScheme` Definitions
+### Integrate in Existing Repositories
+--
+
+## Are you interested in participating? email me:
+## Rainer.Krug@uzh.ch
+
+---
+class: center, top
+
+background-image: url(./fig/Group_2019.jpg)
+background-size: cover
+background-position: bßottom center
+
+A .red[BIG THANK YOU] to everybody in the our group
+
+--
+
+Particularly the Guinea Pigs
+
+---
+class: center, bottom
+
+background-image: url(./fig/qr_talk.svg),url(./fig/qr_dmdScheme.svg),url(./fig/big_coffee.jpg),url("https://zenodo.org/badge/DOI/10.5281/zenodo.3386062.svg"),url("https://zenodo.org/badge/DOI/10.5281/zenodo.3229615.svg")
+background-size: 10%, 10%, 80%, 20%, 20%
+background-position: 25% 98%, 89% 98%, 50% 0%, 1% 95%, 65% 95%
+
+#  Talk <span style="padding-left:350px"> `dmdScheme` <span style="padding-left:210px">
 
 .dt[ Image credit: [eater.com](https://www.eater.com/2014/10/30/7131255/starbucks-free-drink-record-83-101-shots-espresso) ]
 

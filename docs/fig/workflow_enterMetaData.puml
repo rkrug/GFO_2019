@@ -2,44 +2,29 @@
 
 start
 ''''''''''''
-:= Install scheme definitions in R
-we take `emeScheme` as an example
-**assuming, it is already on CRAN**
+:= Install and load scheme definitions in R
 ..R code..
-""install.packages("emeScheme")"";
-''''''''''''
-:= Load `emeScheme` in R
-..R code..
-""library("emeScheme")"";
+""install.packages("theNewScheme")""
+""library("theNewScheme")"";
 ''''''''''''
 := Create new emeScheme metadata template
-* save it (here 'metadata_exp1.xlsx')
 ..R code..
-""enter_new_metadata("emeScheme", file = "metadata_exp1.xlsx", format = TRUE)"";
-''''''''''''
-:= Enter emeScheme metadata in "metadata_exp1.xlsx"
-using for example
-* Excel or
-* Pages or
-* Libre Office or
-* ...;
+""enter_new_metadata("theNewScheme", file = "metadata.xlsx", format = TRUE)"";
 ''''''''''''
 repeat
+  := Enter / Edit theNewScheme metadata in "metadata.xlsx"
+  using for example
+  ..using..
+  Excel, Pages, Libre Office, Google Docs, ...;
   := Validate metadata
   ..R code..
-  ""validate(x = "metadata_exp1.xlsx", path = ".", report = "html")"";
-  if (erros or warnings?) then (yes)
-    := Edit "metadata_exp1.xlsx" to fix
-    * errors (necessary)
-    * warnings (better);
-  else (no)
-  endif
-repeat while (metadata edited?) is (yes)
+  ""report(x = "metadata.xlsx", path = ".", report = "html")"";
+repeat while (errors or warnings?) is (yes)
 -> no;
 ''''''''''''
-:= Export as xml for archiving
+:= Export as xml for further processing
 ..R code..
-""dmdScheme_to_xml(x = 'metadata_exp1.xlsx', output = "metadata")"";
+""dmdScheme_to_xml(x = 'metadata.xlsx', file = 'metadata.xml')"";
 ''''''''''''
 stop
 
